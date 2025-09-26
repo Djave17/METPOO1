@@ -1,8 +1,12 @@
-package Dao;
+package Models;
+
+import Dao.VisitDao;
+import Interfaces.IVisita;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
-public class Visit {
+public class Visit implements IVisita {
 
     private long id;
     private String visitor_name;
@@ -97,5 +101,15 @@ public class Visit {
                 ", visit_date=" + visit_date +
                 ", visit_exit=" + visit_exit +
                 '}';
+    }
+
+    @Override
+    public void agregar(Visit visita) {
+
+    }
+
+    @Override
+    public ArrayList<Visit> obtenerVisitas() {
+        return null;
     }
 }

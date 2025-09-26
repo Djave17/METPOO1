@@ -15,4 +15,15 @@ public class Conexion {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 
+    public String getURL() {
+        return URL;
+    }
+
+    public String getUSER() {
+        return USER;
+    }
+
+    public String getPASSWORD() {
+        return PASSWORD;
+    }
 }
