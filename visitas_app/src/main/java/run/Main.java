@@ -26,18 +26,10 @@ public class Main {
             Visit visit = new Visit("Juan", "Perez", "12345678", "", "Estoy en el hotel");
             VisitDao visitDao = new VisitDao(conn);
             visitDao.agregar(visit);
+            visitDao.obtenerVisitas();
 
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            // Cerrar la conexión cuando ya no se necesite
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (Exception ex) {
-                    ex.printStackTrace();
-                }
-            }
         }
     }
 

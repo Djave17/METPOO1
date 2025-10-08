@@ -6,6 +6,7 @@ import util.Conexion;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class VisitDao implements IVisita {
@@ -37,6 +38,32 @@ public class VisitDao implements IVisita {
 
     @Override
     public ArrayList<Visit> obtenerVisitas() {
-        return null;
+        ArrayList<Visit> visitas = new ArrayList<>();
+        try {
+            String sql = "SELECT * FROM visit ORDER BY visit_date DESC";
+
+            try (PreparedStatement ps = connection.prepareStatement(sql))
+            {
+                var rs = ps.executeQuery();
+                while (rs.next()) {
+                    Visit visita = new Visit();
+                    visita.setId(rs.getLong("id"));
+                    visita.setVisitor_name(rs.getString("visitor_name"));
+                    visita.setHost_name(rs.getString("host_name"));
+                    visita.setVisitor_document(rs.getString("visitor_document"));
+                    visita.setVisitor_email(rs.getString("visitor_email"));
+                    visita.setReason(rs.getString("reason"));
+                    visita.setVisit_date(rs.getObject("visit_date", java.time.LocalDateTime.class));
+                    visita.setVisit_exit(rs.getObject("visit_exit", java.time.LocalDateTime.class));
+                    visitas.add(visita);
+                }
+            }
+        } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        return visitas;
     }
+
+
+
 }
