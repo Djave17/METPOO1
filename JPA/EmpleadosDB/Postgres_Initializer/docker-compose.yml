@@ -1,0 +1,50 @@
+version: "3.9"
+
+name: db_stack_m1
+services:
+  postgres:
+    image: elestio/postgres:17
+    # Si quieres forzar explícitamente la arquitectura en M1:
+    platform: linux/arm64
+    container_name: p_Empleados
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: empleadosDB
+      POSTGRES_USER: David
+      POSTGRES_PASSWORD: Dsanchez2303
+      TZ: America/Managua
+    ports:
+      - "5433:5432"        # host:container
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./initdb:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  pgadmin:
+    image: elestio/pgadmin:latest
+    # Alternativa oficial si prefieres el proyecto original:
+    # image: dpage/pgadmin4:latest
+    platform: linux/arm64
+    container_name: pgadmin_Empleados
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: dsanchez060322@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: Dsanchez2303!
+      # Opcional para auto-registrar el servidor (ver abajo servers.json):
+      # PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION: "True"
+    ports:
+      - "5050:80"        # interfaz web de pgAdmin
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+      - ./pgadmin/servers.json:/pgadmin4/servers.json:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  pgdata:
+  pgadmin:
