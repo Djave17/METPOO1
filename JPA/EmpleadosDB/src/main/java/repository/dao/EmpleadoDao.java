@@ -7,6 +7,7 @@ import repository.ICargo;
 import repository.IEmpleado;
 
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.List;
 
 public class EmpleadoDao implements IEmpleado {
@@ -18,6 +19,7 @@ public class EmpleadoDao implements IEmpleado {
 
     @Override
     public Empleado guardarEmpleado(Empleado empleado){
+
         if (empleado.getId() == null) {
             em.getTransaction().begin(); // Iniciar una nueva transacción TODO: INVESTIGAR GET TRANSACTION
             em.persist(empleado); // Persistir la nueva carrera en la base de datos TODO: INVESTIGAR PERSIST
@@ -31,29 +33,17 @@ public class EmpleadoDao implements IEmpleado {
     public List<Empleado> listarEmpleados(){
 
         List<Empleado> lista = em.createQuery("from Empleado", Empleado.class).getResultList(); // Consulta para obtener todas las carreras TODO: INVESTIGAR CREATEQUERY
-        if (lista != null) {
-            return lista;
-        }
-        System.out.println("No se encontraron empleados.");
-        return null;
-
+        return (lista == null) ? Collections.emptyList() : lista;
     }
 
     @Override
-    public void actualizarEmpleado(Long idEmpleado){
-        if(idEmpleado != null) {
-            Empleado empleado = em.find(Empleado.class, idEmpleado);
-            if (empleado != null) {
-                em.getTransaction().begin(); // Iniciar una nueva transacción TODO: INVESTIGAR GET TRANSACTION
-                em.merge(empleado); // Actualizar la carrera en la base de datos TODO: INVESTIGAR MERGE
-                em.getTransaction().commit(); // Confirmar la transacción TODO: INVESTIGAR COMMIT
-            } else {
-                System.out.println("No se encontro el empleado con ID: " + idEmpleado);
-            }
+    public void actualizarEmpleado(Empleado empleado){
+        if (empleado == null || empleado.getId() == null) {
+            throw new IllegalArgumentException("Empleado e ID son obligatorios para actualizar.");
         }
-        else {
-            throw new IllegalArgumentException("El ID del empleado es obligatorio.");
-        }
+        em.getTransaction().begin();
+        em.merge(empleado);  // JPA decide UPDATE por tener id != null.
+        em.getTransaction().commit();
     }
 
 

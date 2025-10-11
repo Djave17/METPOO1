@@ -2,10 +2,12 @@ package entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 
 @Entity
 @Table(name = "Cargo")
+@Getter @Setter
 public class Cargo {
 
     @Id
@@ -29,5 +31,19 @@ public class Cargo {
         return id;
     }
 
-    // Eliminado: getNombre(Long id) ya que no es un getter válido y causa confusión
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombreCargo() {
+        return nombreCargo;
+    }
+
+    public void setNombreCargo(String nombreCargo) {
+        if (nombreCargo == null || nombreCargo.isBlank()) {
+            throw new IllegalArgumentException("El nombre del cargo no puede estar vacío.");
+        }
+        this.nombreCargo = nombreCargo.trim();
+    }
+
 }

@@ -227,7 +227,7 @@ public class Menu {
         System.out.println("\n--- EMPLEADOS Y SUS CARGOS ---");
         empleados.forEach(e ->
                 System.out.printf("Empleado: %s | Cargo: %s | Salario: %.2f%n",
-                        e.getNombre(),
+                        e.getNombreEmpleado(),
                         e.getCargo().getNombreCargo(),
                         e.getSalario()));
     }

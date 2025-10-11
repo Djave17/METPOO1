@@ -34,13 +34,43 @@ public class Empleado {
         this.cargo = cargo;
     }
 
-    public Long getId() {
-        return id;
+    // --- Getters (necesarios para listar en tablas/combos de la UI) ---
+    public Long getId() { return id; }
+    public String getNombreEmpleado() { return nombreEmpleado; }
+    public Double getSalario() { return salario; }
+    public Cargo getCargo() { return cargo; }
+
+    public void setId(Long id) {
+        if (id == null) {
+            throw new IllegalArgumentException("El ID del empleado no puede ser nulo.");
+        }
+        this.id = id;
     }
-    
-    public String getNombre(){
-        return this.nombreEmpleado;
+    public void setNombreEmpleado(String nombreEmpleado) {
+        if (nombreEmpleado == null || nombreEmpleado.isBlank()) {
+            throw new IllegalArgumentException("El nombre del empleado no puede estar vacío.");
+        }
+        this.nombreEmpleado = nombreEmpleado.trim();
+
     }
-    
-    
+    public void setSalario(Double salario) {
+        if (salario <= 0 ) {
+            throw new IllegalArgumentException("El salario no puede ser negativo.");
+        }else if (salario == null) {
+            throw new IllegalArgumentException("El salario no puede ser nulo.");
+        }
+        this.salario = salario;
+    }
+
+    public void setCargo(Cargo cargo) {
+        if (cargo == null) {
+            throw new IllegalArgumentException("El cargo no puede ser nulo.");
+        }
+        this.cargo = cargo;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Empleado [id = %d, nombreEmpleado = '%s', salario = %.2f, cargo = %s]", id, nombreEmpleado, salario, cargo);
+    }
 }

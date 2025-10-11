@@ -8,7 +8,7 @@ public interface IEmpleado {
 
     Empleado guardarEmpleado(Empleado empleado);
     List<Empleado> listarEmpleados();
-    void actualizarEmpleado(Long id);
+    void actualizarEmpleado(Empleado empleado);
     void eliminarEmpleado(Long id);
     Empleado buscarEmpleadoPorId(Long id);
 }
