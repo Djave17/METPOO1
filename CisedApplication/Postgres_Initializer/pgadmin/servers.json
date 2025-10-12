@@ -1,9 +1,9 @@
 {
   "Servers": {
     "1": {
-      "Name": "cisedDB_pg",
+      "Name": "cisedDB",
       "Group": "Local",
-      "Port": 5432,
+      "Port": 5433,
       "Username": "David",
       "Host": "host.docker.internal",
       "SSLMode": "prefer",
