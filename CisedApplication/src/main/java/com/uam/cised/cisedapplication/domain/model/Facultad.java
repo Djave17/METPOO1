@@ -11,6 +11,8 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "facultad",
+        uniqueConstraints = @UniqueConstraint(name="uk_facultad_nombre", columnNames="nombre"))
 public class Facultad {
 
     @Id
