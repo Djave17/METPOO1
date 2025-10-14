@@ -11,9 +11,7 @@ import lombok.*;
                 @Index(name="ix_cursodocente_docente", columnList="docente_id")
         })
 @Data @NoArgsConstructor @AllArgsConstructor
-
 public class CursoDocente {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
