@@ -8,7 +8,8 @@ import org.springframework.data.domain.Pageable;
 import java.util.Optional;
 import java.util.List;
 
-public interface AsignaturaRepository {
+public interface AsignaturaRepository  extends JpaRepository<Asignatura, Long>
+{
 
     // Unicidades por programa
     Optional<Asignatura> findByCodigoIgnoreCaseAndProgramaId(String codigo, Long programaId);
@@ -16,6 +17,10 @@ public interface AsignaturaRepository {
 
     boolean existsByCodigoIgnoreCaseAndProgramaId(String codigo, Long programaId);
     boolean existsByNombreIgnoreCaseAndProgramaId(String nombre, Long programaId);
+
+
+    List<Asignatura> findByProgramaId(Long programaId);
+    Page<Asignatura> findByProgramaId(Long programaId, Pageable pageable);
 
     // Filtros
     Page<Asignatura> findByNombreContainingIgnoreCase(String q, Pageable pageable);

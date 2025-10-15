@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.List;
 
 
-public interface ProgramaRepository {
+public interface ProgramaRepository extends  JpaRepository<Programa, Long> {
 
     // Por nombre (opcionalmente dentro de una facultad)
     Optional<Programa> findByNombreIgnoreCaseAndFacultadId(String nombre, Long facultadId);

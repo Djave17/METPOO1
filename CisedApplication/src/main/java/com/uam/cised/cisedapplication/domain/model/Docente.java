@@ -25,6 +25,14 @@ public class Docente {
     @Email @NotBlank
     private String email;
 
+    private boolean activo;
+
+
+    public boolean isActivo() {
+        return this.activo;
+    }
+
+
     public Docente(String nombre, String email) {
         this.nombre = nombre;
         this.email = email;

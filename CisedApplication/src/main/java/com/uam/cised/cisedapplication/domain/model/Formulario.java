@@ -48,9 +48,7 @@ public class Formulario {
      * - Cascade + orphanRemoval para que el ciclo de vida lo controle el agregado.
      * - @OrderBy asegura orden estable por 'orden'.
      */
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "formulario_id", nullable = false,
-               foreignKey = @ForeignKey(name = "fk_pregunta_formulario"))
+    @OneToMany(mappedBy = "formulario", cascade = CascadeType.ALL, orphanRemoval = true)
     @OrderBy("id ASC")
     private List<Pregunta> preguntas = new ArrayList<>();
 

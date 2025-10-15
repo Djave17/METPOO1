@@ -10,6 +10,5 @@ public interface DocenteRepository extends JpaRepository<Docente, Long> {
     Optional<Docente> findByEmailIgnoreCase(String email);
     boolean existsByEmailIgnoreCase(String email);
 
-    // Estado (Activo/Inactivo)
-    List<Docente> findByEstado(boolean estado);
+    List<Docente> findByActivo(boolean activo);
 }
