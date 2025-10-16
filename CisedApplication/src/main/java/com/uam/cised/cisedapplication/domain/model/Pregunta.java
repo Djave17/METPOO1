@@ -36,6 +36,9 @@ public class Pregunta {
     @JoinColumn(name = "formulario_id", nullable = false, foreignKey = @ForeignKey(name = "fk_pregunta_formulario"))
     private Formulario formulario;
 
+    @Column(name = "esObligatoria", nullable = false)
+    private Boolean esObligatoria = false;
+
     // getters/setters (si usas Lombok, estos pueden no ser necesarios)
     public Formulario getFormulario() { return formulario; }
     public void setFormulario(Formulario formulario) { this.formulario = formulario; }
