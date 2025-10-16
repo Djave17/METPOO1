@@ -66,8 +66,8 @@ public class Formulario {
     public Long getId() { return id; }
     public String getNombreFormulario() { return nombreFormulario; }
     public void setNombreFormulario(String nombreFormulario) { this.nombreFormulario = nombreFormulario; }
-    public String getTipo() { return tipo; }
-    public void setTipo(String tipo) { this.tipo = tipo; }
+    public String getTipo() { return tipo.getNombre(); }
+    public void setTipo(String tipo) { this.tipo.setNombre(tipo); }
     public Integer getVersion() { return version; }
     public void setVersion(Integer version) { this.version = version; }
     public List<Pregunta> getPreguntas() { return preguntas; }
