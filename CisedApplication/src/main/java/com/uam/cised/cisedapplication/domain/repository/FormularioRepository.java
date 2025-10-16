@@ -7,5 +7,5 @@ import java.util.Optional;
 
 public interface FormularioRepository extends JpaRepository<Formulario, Long> {
     Optional<Formulario> findByTipo_NombreIgnoreCase(String nombre);
-    boolean existsByTipo_NombreIgnoreCase(String nombre);
+    boolean existsByTipoIgnoreCase(String nombre);
 }

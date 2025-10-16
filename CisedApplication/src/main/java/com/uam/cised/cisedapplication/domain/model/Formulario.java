@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Generated;
-import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,7 +66,7 @@ public class Formulario {
     public Long getId() { return id; }
     public String getNombreFormulario() { return nombreFormulario; }
     public void setNombreFormulario(String nombreFormulario) { this.nombreFormulario = nombreFormulario; }
-    public TipoFormulario getTipo() { return tipo; }
+    public String getTipo() { return tipo; }
     public void setTipo(TipoFormulario tipo) { this.tipo = tipo; }
     public Integer getVersion() { return version; }
     public void setVersion(Integer version) { this.version = version; }

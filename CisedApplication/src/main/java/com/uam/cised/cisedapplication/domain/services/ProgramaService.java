@@ -21,7 +21,7 @@ public class ProgramaService {
     private final ProgramaRepository programaRepository;
     private final FacultadRepository facultadRepository;
     private final NivelFormacionRepository nivelFormacionRepository;
-    private final ProcessInfoContributor processInfoContributor;
+
 
     @Transactional(readOnly = true)
     public Programa crear(Long facultadId, Long nivelFormacionID, Programa programa){
