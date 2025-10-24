@@ -2,6 +2,7 @@ package com.uam.cised.cisedapplication.domain.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -27,10 +28,11 @@ public class Formulario {
 
     //Existen tres tipos de formularios: Docente, Estudiante y Administrativo, por lo que se crea una clase tipo formulario para
     //diferenciar los tipos de formularios
-    @ManyToOne(optional=false)
-    @JoinColumn(name = "tipo_formulario_id", nullable = false,
-            foreignKey = @ForeignKey(name = "fk_formulario_tipo"))
+    @NotNull
+    @Enumerated(EnumType.STRING)           // guarda el name() del enum en la columna
+    @Column(nullable = false, length = 80)
     private TipoFormulario tipo;
+
 
 
     @Column(nullable = false) // Incrementado para control de versiones
@@ -66,8 +68,10 @@ public class Formulario {
     public Long getId() { return id; }
     public String getNombreFormulario() { return nombreFormulario; }
     public void setNombreFormulario(String nombreFormulario) { this.nombreFormulario = nombreFormulario; }
-    public String getTipo() { return tipo.getNombre(); }
-    public void setTipo(String tipo) { this.tipo.setNombre(tipo); }
+    public TipoFormulario getTipo() { return tipo; }
+    public void setTipo(TipoFormulario tipo) { this.tipo = tipo; }
+
+
     public Integer getVersion() { return version; }
     public void setVersion(Integer version) { this.version = version; }
     public List<Pregunta> getPreguntas() { return preguntas; }

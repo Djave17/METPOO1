@@ -1,6 +1,7 @@
 package com.uam.cised.cisedapplication.domain.repository;
 
 import com.uam.cised.cisedapplication.domain.model.Formulario;
+import com.uam.cised.cisedapplication.domain.model.TipoFormulario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
@@ -10,14 +11,14 @@ import java.util.Optional;
  * Extiende JpaRepository para CRUD:
  *   - save(entity)  -> crear/actualizar
  *   - findById(id)  -> leer uno
- *   - findAll()     -> leer todos
+ *   - findAll()    -> leer todos
  *   - deleteById()  -> eliminar
  */
 
 public interface FormularioRepository extends JpaRepository<Formulario, Long> {
-    Optional<Formulario> findByTipo_NombreIgnoreCase(String nombre);
-    boolean existsByTipoIgnoreCase(String nombre);
-    boolean existsByTipo_NombreIgnoreCase(String nombre);
 
+    Optional<Formulario> findByTipo(TipoFormulario tipo);
 
+    boolean existsByTipo(TipoFormulario tipo);
 }
+
