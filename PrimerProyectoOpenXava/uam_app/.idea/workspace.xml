@@ -5,57 +5,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="249d789c-0fc6-435b-9ea9-9c004014fa01" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/modelo/Carrera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/modelo/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/modelo/TuPrimeraEntidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/run/.algo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/run/uam_app.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/uam_app-labels_es.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/i18n/uam_app-messages_es.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/naviox-users.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/naviox.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/aplicacion.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/controladores.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/annotation-type-default.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/aplicacion.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/application.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/controladores.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/controllers.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/conversores.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/converters.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/default-size.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/editores.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/editors.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/longitud-defecto.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/stereotype-type-default.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/tabs-default-values.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/tipo-anotacion-defecto.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/tipo-estereotipo-defecto.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/validadores.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/validators.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/dtds/valores-defecto-tabs.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/xava/editores.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/xava/style/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/xava-junit.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Wiki - JPA/Biblioteca_JPA/src/main/java/run/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/model/Formulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/model/Formulario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/model/TipoFormulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/model/TipoFormulario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/repository/FormularioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/repository/FormularioRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/services/FormularioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../CisedApplication/src/main/java/com/uam/cised/cisedapplication/domain/services/FormularioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/uam_app-db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/uam_app-db.script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/modelo/Carrera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/modelo/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/modelo/TuPrimeraEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/run/.algo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uam/edu/ni/uam_app/run/uam_app.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/uam_app-labels_es.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/uam_app-messages_es.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/naviox-users.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/naviox.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/aplicacion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/controladores.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/annotation-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/aplicacion.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/application.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/controladores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/controllers.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/conversores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/converters.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/default-size.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/editores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/editors.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/longitud-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/stereotype-type-default.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/tabs-default-values.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/tipo-anotacion-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/tipo-estereotipo-defecto.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/validadores.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/validators.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/dtds/valores-defecto-tabs.dtd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xava/editores.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/xava/style/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/xava-junit.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/firstSteps_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/index_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/leftMenu_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/moduleHeader_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/modulesList_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/modulesMenu_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/selectModules_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/signIn_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/naviox/welcome_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/barButton_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/bottomButtons_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/buttonBar_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/collectionFrameHeader_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/collection_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/core_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/detail_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editorWrapper_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/calendarEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/chartColumnNameEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/chartDataEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/chartTypeEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/chartXColumnEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/chartsEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/collectionTotals_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/comparatorsCombo_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/dateCalendarEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/elementCollectionEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/listEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/notAvailableEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/passwordEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/editors/textEditor_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/errors_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/execute_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/frameActions_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/jasperReport_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/listConfigurations_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/list_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/messages_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/module_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/work/Tomcat/localhost/uam_app/org/apache/jsp/xava/themeChooser_jsp.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,35 +134,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.uam_app.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.uam_app [clean].executor": "Run",
-    "Maven.uam_app [package].executor": "Run",
-    "Maven.uam_app [validate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/davidsanchez/ISI3/ORIENTADO A OBJETOS /METPOO1/PrimerProyectoOpenXava/uam_app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.chat.deep.ai.settings.CodeAssistSettingsConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.uam_app.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.uam_app [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.uam_app [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.uam_app [validate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/davidsanchez/ISI3/ORIENTADO A OBJETOS /METPOO1/PrimerProyectoOpenXava/uam_app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.chat.deep.ai.settings.CodeAssistSettingsConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -140,7 +179,9 @@
       <option name="presentableId" value="Default" />
       <updated>1761261184334</updated>
       <workItem from="1761261185639" duration="653000" />
-      <workItem from="1761264855787" duration="955000" />
+      <workItem from="1761264855787" duration="2146000" />
+      <workItem from="1761693437255" duration="57000" />
+      <workItem from="1761860934958" duration="1221000" />
     </task>
     <servers />
   </component>
