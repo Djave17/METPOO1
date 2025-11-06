@@ -1,13 +1,13 @@
 {
   "Servers": {
     "1": {
-      "Name": "cisedDB",
+      "Name": "bibliotecaDB",
       "Group": "Local",
       "Port": 5433,
       "Username": "David",
       "Host": "host.docker.internal",
       "SSLMode": "prefer",
-      "MaintenanceDB": "cisedDB"
+      "MaintenanceDB": "bibliotecaDB"
     }
   }
 }

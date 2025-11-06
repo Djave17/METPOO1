@@ -11,7 +11,7 @@ services:
     container_name: postgres_cisedDB
     restart: unless-stopped
     environment:
-      POSTGRES_DB: cisedDB
+      POSTGRES_DB: bibliotecaDB
       POSTGRES_USER: David
       POSTGRES_PASSWORD: Dsanchez2303
       TZ: America/Managua
@@ -31,7 +31,7 @@ services:
     # Alternativa oficial si prefieres el proyecto original:
     # image: dpage/pgadmin4:latest
     platform: linux/arm64
-    container_name: pgadmin_cisedDB
+    container_name: pgadmin_bibliotecaDB
     restart: unless-stopped
     environment:
       PGADMIN_DEFAULT_EMAIL: dsanchez060322@gmail.com
