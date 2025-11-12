@@ -6,10 +6,10 @@ services:
     image: elestio/postgres:17
     # Si quieres forzar explícitamente la arquitectura en M1:
     platform: linux/arm64
-    container_name: p_Empleados
+    container_name: p_OpenXava
     restart: unless-stopped
     environment:
-      POSTGRES_DB: empleadosDB
+      POSTGRES_DB: OpenXavaDB
       POSTGRES_USER: David
       POSTGRES_PASSWORD: Dsanchez2303
       TZ: America/Managua
@@ -29,7 +29,7 @@ services:
     # Alternativa oficial si prefieres el proyecto original:
     # image: dpage/pgadmin4:latest
     platform: linux/arm64
-    container_name: pgadmin_Empleados
+    container_name: pgadmin_OpenXava
     restart: unless-stopped
     environment:
       PGADMIN_DEFAULT_EMAIL: dsanchez060322@gmail.com

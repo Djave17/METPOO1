@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+
+    <!-- Unidad de persistencia 'default' -->  
+    <persistence-unit name="default">
+        <!-- Usar un datasource gestionado por el contenedor (Tomcat) -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>java:comp/env/jdbc/untitled1DS</jta-data-source>
+
+
+
+        <properties>
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <!-- Habilitar logs SQL para debugging (opcional en prod) -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+
+
+            <!-- <property name="javax.persistence.jdbc.password" value="Dsanchez2303"/> -->
+        </properties>
+    </persistence-unit>
+
+    <!-- Unidad de prueba junit (si utilizas) -->
+    <persistence-unit name="junit">
+    	<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    	<class>org.openxava.web.editors.DiscussionComment</class>
+    	<class>com.openxava.naviox.model.ConfigurationRecord</class>
+    	<class>com.openxava.naviox.model.Folder</class>
+    	<class>com.openxava.naviox.model.History</class>
+    	<class>com.openxava.naviox.model.Module</class>
+    	<class>com.openxava.naviox.model.ModuleRights</class>
+    	<class>com.openxava.naviox.model.Organization</class>
+    	<class>com.openxava.naviox.model.Role</class>
+    	<class>com.openxava.naviox.model.SessionRecord</class>
+    	<class>com.openxava.naviox.model.SSORecord</class>
+    	<class>com.openxava.naviox.model.User</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:hsqldb:hsql://localhost:1666"/>
+        </properties>
+    </persistence-unit>    
+
+</persistence>

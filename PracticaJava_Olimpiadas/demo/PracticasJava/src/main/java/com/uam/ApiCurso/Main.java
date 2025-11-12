@@ -67,5 +67,17 @@ public class Main {
         }
     }
 
+    static long factorialLong(int n) {
+        // Por definición: 0! = 1 y 1! = 1
+        if (n <= 1) return 1L;
+
+        long res = 1L;        // Acumulador del resultado
+        for (int i = 2; i <= n; i++) {
+            // Multiplicamos res por i. Como usamos long, evitamos overflow SOLO hasta 20!
+            res *= i;
+        }
+        return res;
+    }
+
 
 }
