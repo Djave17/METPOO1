@@ -1,12 +1,8 @@
-package com.uam.ApiCurso;
+package com.uam.olimpiadasJava;
 
 import java.util.ArrayList;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-
-
+public class EjerciciosNivel1_2 {
     public static int verMayor(){
 
         int[] nums = {5, 17, 2, 30, 14};
@@ -136,10 +132,5 @@ public class Main {
             actual = suma;
 
         }
-    }
-
-
- public static void main(String[] args) {
-
     }
 }
