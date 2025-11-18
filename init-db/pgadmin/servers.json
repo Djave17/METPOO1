@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "Olimpiadas Local",
+      "Group": "OlimpiadasJPA",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "OlimpiadasJPA",
+      "Username": "postgres",
+      "PassFile": "/pgpass",
+      "SSLMode": "prefer"
+    }
+  }
+}

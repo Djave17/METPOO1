@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "METPOO",
+      "Group": "metpoo",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "METPOO",
+      "Username": "postgres",
+      "PassFile": "/pgpass",
+      "SSLMode": "prefer"
+    }
+  }
+}
