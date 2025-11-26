@@ -27,6 +27,60 @@ class SecuenciaCubos{
 
 }
 
+class Convert{
+
+    public Convert(){
+    }
+    public double toFarenheit(double a){
+
+
+        return (a * 9/5) + 32;
+    }
+}
+
+class Mayor{
+
+
+    public Mayor(){
+    }
+
+    public int getMayor(){
+        int[] nums = {5, 17, 2, 30, 14};
+        int mayor = 0;
+        for(int i = 0; i < nums.length; i++ ){
+            if(nums[i] > mayor){
+
+                mayor = nums[i];
+            }
+
+        }
+        return mayor;
+
+
+    }
+}
+
+
+class Suma {
+
+    public Suma(){
+    }
+
+
+    public int getSuma(int n){
+        int suma = 0;
+        for(int i = 0; i <= n; i++){
+            suma +=i ;
+        }
+
+        return suma;
+    }
+
+}
+
+
+
+
 class Main {
 
 
@@ -38,3 +92,4 @@ class Main {
         System.out.println(sec.getSecuenciax2(sec1));
     }
 }
+

@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<!DOCTYPE controladores SYSTEM "dtds/controladores.dtd">
+
+<controladores>
+
+    <controlador nombre="TuPrimeraEntidad">
+        <hereda-de controlador="Typical"/>
+        <accion nombre="printCustomReport" icono="printer" modo="list"
+                clase="com.granum.InformeOpenXava">
+        </accion>
+    </controlador>
+    
+    <!-- Variable de entorno: 
+    <var-entorno nombre="InformeOpenXava_ANYO_DEFECTO" valor="2015"/>
+    -->
+    
+    <!-- Objeto de sesión:
+    <Objeto nombre="InformeOpenXava_anyoActivo" clase="java.lang.Integer" valor="2015" 
+            ambito="global"/>
+    -->
+    
+    <!-- Controlador:
+    <controlador nombre="Profesor">
+        <hereda-de controlador="Typical"/>
+        <accion nombre="new" icono="library-plus" atajo-de-teclado="Control N" 
+                clase="acciones.CrearProfesor"/>        
+    </controlador>
+    -->
+    
+</controladores>

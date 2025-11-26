@@ -1,4 +1,27 @@
 package uam.edu.ni.PracticaOlimpiadas.modelo;
 
-public class Carne {
+import lombok.Getter;
+import lombok.Setter;
+import org.openxava.annotations.Hidden;
+import org.openxava.annotations.Required;
+
+import javax.persistence.*;
+
+@Entity
+@Getter@Setter
+public class Plato {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Hidden
+    private Long id;
+
+    @Column(length=50)
+    private String nombre;
+
+    @Required
+    private double precio;
+
+    @ManyToOne
+    @JoinColumn(name="carrito")
+    private Carrito carrito;
 }

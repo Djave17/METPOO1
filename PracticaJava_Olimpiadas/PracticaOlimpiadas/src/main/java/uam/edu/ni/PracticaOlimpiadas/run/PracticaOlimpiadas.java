@@ -11,7 +11,7 @@ import org.openxava.util.*;
 public class PracticaOlimpiadas {
 
 	public static void main(String[] args) throws Exception {
-		DBServer.start("PracticaOlimpiadas-db"); // Para usar tu propia base de datos comenta esta línea y configura src/main/webapp/META-INF/context.xml
+		//DBServer.start("PracticaOlimpiadas-db"); // Para usar tu propia base de datos comenta esta línea y configura src/main/webapp/META-INF/context.xml
 		AppServer.run("PracticaOlimpiadas"); // Usa AppServer.run("") para funcionar en el contexto raíz
 	}
 
